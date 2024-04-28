@@ -1,0 +1,17 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: doadmin
+      POSTGRES_PASSWORD: AVNS_qp1qLsy1_rXcfQLjKif
+      POSTGRES_DB: defaultdb
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:latest
+    restart: always
+    ports:
+      - "6379:6379"
