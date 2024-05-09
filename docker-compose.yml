@@ -1,14 +1,10 @@
 version: '3'
 services:
-  postgres:
-    image: postgres:latest
-    restart: always
-    environment:
-      POSTGRES_USER: doadmin
-      POSTGRES_PASSWORD: AVNS_qp1qLsy1_rXcfQLjKif
-      POSTGRES_DB: defaultdb
+  podweenify:
+    image: devyassinepro/podweenify:latest
     ports:
-      - "5432:5432"
+      - "8080:80"
+    restart: always
 
   redis:
     image: redis:latest
