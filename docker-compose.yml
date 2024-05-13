@@ -17,21 +17,3 @@ services:
     ports:
       - "8082:80"  # Map container port 80 to host port 8082
     restart: always
-
-  podweenify3:
-    image: devyassinepro/podweenify:1.5
-    ports:
-      - "8083:80"  # Map container port 80 to host port 8083
-    restart: always
-
-  podweenify4:
-    image: devyassinepro/podweenify:1.5
-    ports:
-      - "8084:80"  # Map container port 80 to host port 8084
-    restart: always
-
-  podweenify5:
-    image: devyassinepro/podweenify:1.5
-    ports:
-      - "8085:80"  # Map container port 80 to host port 8085
-    restart: always
